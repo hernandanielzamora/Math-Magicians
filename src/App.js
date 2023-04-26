@@ -1,5 +1,6 @@
 import './App.css';
 import Calculator from './components/Calculator';
+import Quotes from './components/Quotes';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="calculator-container">
         <Calculator />
       </div>
+      <Quotes />
     </div>
   );
 }
