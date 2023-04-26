@@ -1,40 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+import Buttons from './Buttons';
 
-export default function CalculatorComp() {
+function CalculatorComp() {
+  const [currentState, setState] = useState({ total: 0, next: null, operation: null });
+
+  const handleClick = (btn) => {
+    setState((currentState) => calculate(currentState, btn.name));
+    if (btn.name === 'AC') {
+      setState({ total: 0, next: null, operation: null });
+    }
+  };
   return (
     <>
-      <div className="calculator-result">0</div>
+      <div className="calculator-result">
+        {currentState.total}
+        {currentState.operation}
+        {currentState.next}
+      </div>
       <div className="calculator-keypad">
-        <div>
-          <button type="button" className="calc-btn">AC</button>
-          <button type="button" className="calc-btn">+/-</button>
-          <button type="button" className="calc-btn">%</button>
-          <button type="button" className="calc-btn calculation-btn">÷</button>
-        </div>
-        <div>
-          <button type="button" className="calc-btn">7</button>
-          <button type="button" className="calc-btn">8</button>
-          <button type="button" className="calc-btn">9</button>
-          <button type="button" className="calc-btn calculation-btn">x</button>
-        </div>
-        <div>
-          <button type="button" className="calc-btn">4</button>
-          <button type="button" className="calc-btn">5</button>
-          <button type="button" className="calc-btn">6</button>
-          <button type="button" className="calc-btn calculation-btn">-</button>
-        </div>
-        <div>
-          <button type="button" className="calc-btn">1</button>
-          <button type="button" className="calc-btn">2</button>
-          <button type="button" className="calc-btn">3</button>
-          <button type="button" className="calc-btn calculation-btn">+</button>
-        </div>
-        <div>
-          <button type="button" className="calc-btn zero-btn">0</button>
-          <button type="button" className="calc-btn">.</button>
-          <button type="button" className="calc-btn calculation-btn">=</button>
-        </div>
+        <Buttons checkOperation={handleClick} />
       </div>
     </>
+  );
+}
+
+export default function Calculator() {
+  return (
+    <CalculatorComp />
   );
 }
