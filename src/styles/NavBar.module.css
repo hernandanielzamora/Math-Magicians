@@ -32,6 +32,7 @@ a {
   color: black;
 }
 
-a:active, a:hover {
-  color: rgb(12, 250, 206)
+a:active,
+a:hover {
+  color: rgb(12, 250, 206);
 }
