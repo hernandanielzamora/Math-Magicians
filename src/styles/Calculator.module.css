@@ -1,0 +1,32 @@
+/* Calculator Page Container */
+.calcPageCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Calculator Container */
+.calculatorcontainer {
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 10%;
+}
+
+.calculatorresult {
+  display: flex;
+  background-color: #b5b5b5;
+  justify-content: flex-end;
+  padding: 1em;
+  align-items: center;
+  height: 3em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.calcPageTitle {
+  margin-left: 5%;
+  font-size: 2em;
+}
+

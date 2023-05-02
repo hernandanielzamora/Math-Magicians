@@ -5,37 +5,9 @@
   scroll-behavior: smooth;
 }
 
-/* app */
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-/* Calculator Container */
-.calculator-container {
-  width: 20em;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  margin-bottom: 5%;
-}
-
-.calculator-result {
-  display: flex;
-  background-color: #b5b5b5;
-  justify-content: flex-end;
-  padding: 1em;
-  align-items: center;
-  height: 2em;
-  font-size: 1.5em;
-  color: white;
-}
-
 /* Buttons */
 .calc-btn {
-  width: 5rem;
+  width: 10rem;
   padding: 5%;
 }
 
@@ -44,42 +16,5 @@
 }
 
 .zero-btn {
-  width: 10rem;
-}
-
-/* Quote Section */
-
-.error-div {
-  margin-left: 5%;
-  font-size: 1.5em;
-}
-
-.loading-div {
-  font-size: 1.5em;
-  margin-left: 5%;
-}
-
-.quote-container {
-  width: 90%;
-  align-self: center;
-  padding: 2%;
-}
-
-.quote {
-  font-weight: 200;
-}
-
-.quote b {
-  margin-left: 1%;
-  font-weight: 600;
-}
-
-.author {
-  margin-top: 2%;
-  font-weight: 200;
-}
-
-.author b {
-  font-weight: 600;
-  margin-left: 1%;
+  width: 20rem;
 }
