@@ -119,7 +119,7 @@ In order to run this project you need:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/). Or send them directly to me.
+Feel free to check the [issues page](https://github.com/hernandanielzamora/math-magicians/issues). Or send them directly to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
