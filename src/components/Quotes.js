@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styles from '../styles/Quotes.module.css';
 
 const Quotes = () => {
   const [quotes, setQuotes] = useState([]);
@@ -28,13 +29,13 @@ const Quotes = () => {
 
   if (load) {
     return (
-      <div className="loading-div">Generating quote...</div>
+      <div className={styles.loadingdiv}>Generating quote...</div>
     );
   }
 
   if (error) {
     return (
-      <div className="error-div">
+      <div className={styles.errordiv}>
         <h4>
           An error has happened:
           {error}
@@ -43,17 +44,26 @@ const Quotes = () => {
     );
   }
 
+  const quoteStyle = {
+    padding: '20px 0',
+    lineHeight: '1.5em',
+    color: 'rgb(78, 35, 35)',
+    textAlign: 'center',
+    fontWeight: '500',
+    marginLeft: '1%',
+  };
+
   return (
-    <div className="quote-container">
-      <h2 className="quote">
+    <div className={styles.quotecontainer}>
+      <h2 className={styles.quote}>
         Quote for today:
-        <b>
+        <b style={quoteStyle}>
           {quotes.quote}
         </b>
       </h2>
-      <h3 className="author">
+      <h3 className={styles.author}>
         By:
-        <b>
+        <b style={quoteStyle}>
           {quotes.author}
         </b>
       </h3>

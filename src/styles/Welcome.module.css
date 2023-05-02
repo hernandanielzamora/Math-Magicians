@@ -1,0 +1,17 @@
+/* Welcome Section */
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 2%;
+}
+
+.welcomeTitle {
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+
+.welcomeText {
+  margin-bottom: 2%;
+  font-size: 1.1em;
+}

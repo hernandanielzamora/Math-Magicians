@@ -15,7 +15,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
   - [:movie_camera: Project Presentation](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -104,13 +103,8 @@ In order to run this project you need:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Not Deployed yet.
-
-<!-- Project Presntation -->
+<!-- Project Presentation -->
 
 ## :movie_camera: Project Presentation <a name="project-presentation"></a>
 
@@ -125,7 +119,7 @@ In order to run this project you need:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/). Or send them directly to me.
+Feel free to check the [issues page](https://github.com/hernandanielzamora/math-magicians/issues). Or send them directly to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
