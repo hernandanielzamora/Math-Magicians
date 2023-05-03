@@ -14,8 +14,8 @@ function CalculatorComp() {
   };
   return (
     <>
-      <div className={styles.calculatorcontainer}>
-        <div className={styles.calculatorresult}>
+      <div className={styles.calculatorcontainer} data-testid="calculator">
+        <div className={styles.calculatorresult} data-testid="screen">
           {currentState.total}
           {currentState.operation}
           {currentState.next}
