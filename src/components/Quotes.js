@@ -3,8 +3,6 @@ import styles from '../styles/Quotes.module.css';
 
 const Quotes = () => {
   const [quotes, setQuotes] = useState([]);
-  // const [load, setLoading] = useState([true]);
-  // const [error, setError] = useState(null);
 
   useEffect(() => {
     const getQuotes = async () => {
@@ -18,31 +16,17 @@ const Quotes = () => {
         }
         const data = await res.json();
         setQuotes(data[0]);
-        // setLoading(false);
       } catch (error) {
-        // setError(error.message);
-        // setLoading(false);
-      }
-    };
-    getQuotes();
-  }, [setQuotes]);
-
-  /*   if (load) {
-      return (
-        <div className={styles.loadingdiv}>Generating quote...</div>
-      );
-    }
-
-    if (error) {
-      return (
         <div className={styles.errordiv}>
           <h4>
             An error has happened:
             {error}
           </h4>
-        </div>
-      );
-    } */
+        </div>;
+      }
+    };
+    getQuotes();
+  }, [setQuotes]);
 
   const quoteStyle = {
     padding: '20px 0',
