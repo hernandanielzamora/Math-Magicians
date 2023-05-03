@@ -19,6 +19,8 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -78,6 +80,21 @@ In order to run this project you need:
 - Npm
 - Node
 - Webpack
+- React
+
+### Usage
+
+To run the project, execute the following command in your terminal (inside the math-magicians folder):
+
+- npm init
+- npm install
+- npm start
+
+### Run tests
+
+To run tests, run the following command:
+
+npm test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,6 +105,12 @@ In order to run this project you need:
 - GitHub: [@hernandanielzamora](https://github.com/hernandanielzamora)
 - Twitter: [@HernanZamora14](https://twitter.com/HernanZamora14)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/hernan-zamora-03a697236/)
+
+## 👥 Author <a name="authors">Jesus Molina</a>
+
+- GitHub: [@Sparktan24](https://github.com/Sparktan24)
+- Twitter: [@Sparktan1](https://twitter.com/Sparktan1)
+- LinkedIn: [Jesus Molina](https://www.linkedin.com/in/jesus-molina-2b104424a/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
